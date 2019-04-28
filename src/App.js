@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Shrooms from './images/kingoystershrooms.jpeg';
+import Header from './components/Header';
 
 const Root = styled.div`
   height: 100%;
@@ -10,7 +11,9 @@ const Root = styled.div`
 
 const App = () => {
   return (
-    <Root />
+    <Root>
+      <Header />
+    </Root>
   );
 }
 

@@ -6,12 +6,13 @@ import Content from '../Content';
 
 const Root = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 3em
   width: 100%;
 `;
-  
-  const NavBarList = styled.ul`
+
+const NavBarList = styled.ul`
   display: flex;
   list-style-type: none;
   margin: 0;

@@ -19,7 +19,7 @@ const NavBarList = styled.ul`
   align-items: center;
   padding: 0;
   width: 80%;
-  background-color: rgba(250,250,210,.8)
+  background-color: rgba(255, 215, 0, .75);
 `;
 
 const ListItem = styled.li`

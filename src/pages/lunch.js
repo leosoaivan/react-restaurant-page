@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Lunch = () => {
   return (
-    <div>
+    <React.Fragment>
       <h1>This is LUNCH</h1>
-    </div>
+    </React.Fragment>
   )
 }
 

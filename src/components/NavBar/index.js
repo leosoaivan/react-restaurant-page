@@ -27,36 +27,52 @@ const ListItem = styled.li`
   padding: 1em 2em;
   font-family: Raleway, sans-serif;
   font-weight: 700;
+  flex-grow: 1;
+  text-align: center;
+
+  &:hover {
+    background-color: rgba(255, 215, 0, 1);
+  }
 `;
 
+const Link = styled(NavLink)`
+  display: block;
+  padding: 1em 2em;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background-color: rgba(255, 215, 0, 1);
+  }
+;`
 
 const NavBar = () => {
   return (
     <Root>
-      <HashRouter>
+      <HashRouter hashType="noslash">
         <NavBarList>
-          <ListItem>
-            <NavLink to="/">
-            	HOME
-            </NavLink>
-          </ListItem>
-          <ListItem>
-            <NavLink to="/lunch">
-              LUNCH MENU
-            </NavLink>
-          </ListItem>
-          <ListItem>
+          <Link to="/">
+            HOME
+          </Link>
+          <Link to="/lunch">
+            LUNCH MENU
+          </Link>
+          <Link>
             DINNER MENU
-          </ListItem>
-          <ListItem>
+          </Link>
+          <Link>
             DESSERTS
-          </ListItem>
-          <ListItem>
+          </Link>
+          <Link>
             CONTACT US
-          </ListItem>
-          <ListItem>
+          </Link>
+          <Link>
             RESERVATIONS
-          </ListItem>
+          </Link>
         </NavBarList>
         <Content />
       </HashRouter>

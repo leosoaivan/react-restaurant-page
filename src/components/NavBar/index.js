@@ -22,19 +22,6 @@ const NavBarList = styled.ul`
   background-color: rgba(255, 215, 0, .75);
 `;
 
-const ListItem = styled.li`
-  display: block;
-  padding: 1em 2em;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  flex-grow: 1;
-  text-align: center;
-
-  &:hover {
-    background-color: rgba(255, 215, 0, 1);
-  }
-`;
-
 const Link = styled(NavLink)`
   display: block;
   padding: 1em 2em;
@@ -61,16 +48,16 @@ const NavBar = () => {
           <Link to="/lunch">
             LUNCH MENU
           </Link>
-          <Link>
+          <Link to="/">
             DINNER MENU
           </Link>
-          <Link>
+          <Link to="/">
             DESSERTS
           </Link>
-          <Link>
+          <Link to="/">
             CONTACT US
           </Link>
-          <Link>
+          <Link to="/">
             RESERVATIONS
           </Link>
         </NavBarList>

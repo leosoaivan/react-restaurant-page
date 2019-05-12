@@ -16,7 +16,7 @@ const LunchMenu = [
   },
   {
     title: 'massaman curry',
-    description: 'Short rib slow-cooked in a cinammon, peanut, and galangal stew. Served with potatoes and basil rice.',
+    description: 'Tender short rib slow-cooked in a cinammon, peanut, and galangal stew. Served with potatoes and basil rice.',
     price: 17,
   },
   {

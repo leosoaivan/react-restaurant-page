@@ -7,19 +7,17 @@ const Root = styled.div`
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 const MenuItem = styled.div`
-  display: flex;
-  width: 50%;
-  flex-direction: row;
-  flex-wrap: wrap;
+  width: 47.5%;
   margin-bottom: 24px;
 `;
 
 const ItemTitle = styled.h2`
   width: 100%;
-  flex-shrink: 0;
   font-family: Roboto, sans-serif;
 `;
 
@@ -36,15 +34,15 @@ const MenuDescription = styled.div`
 `;
 
 const MenuPrice = styled.div`
-  width: 10%;
 `;
 
 const Lunch = () => {
-  const menuDom = LunchMenu.map((menu) => {
+  const menuDom = LunchMenu.map((menu, index) => {
     const { title, description, price } = menu;
+    const menuItemKey = `menu-item-${index}`;
 
     return (
-      <MenuItem>
+      <MenuItem key={menuItemKey}>
         <ItemTitle>
           {title}
         </ItemTitle>

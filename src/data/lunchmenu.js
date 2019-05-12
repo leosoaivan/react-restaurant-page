@@ -16,12 +16,12 @@ const LunchMenu = [
   },
   {
     title: 'massaman curry',
-    description: 'Tender short rib slow-cooked in a cinammon, peanut, and galangal stew. Served with potatoes and basil rice.',
+    description: 'Tender short rib slow-cooked in a cinammon, peanut, and galangal stew. Served with potatoes and basil rice',
     price: 17,
   },
   {
     title: 'pla rad prik',
-    description: 'Deep-fried ocean trout served with Chinese broccoli and toasted garlic cloves drizzled with a honey-chili sauce.',
+    description: 'Deep-fried ocean trout served with Chinese broccoli and toasted garlic cloves drizzled with a honey-chili sauce',
     price: 'MP',
   },
 ];

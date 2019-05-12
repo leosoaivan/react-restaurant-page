@@ -24,7 +24,7 @@ const NavBarList = styled.ul`
 const Link = styled(NavLink)`
   display: block;
   padding: 1em 2em;
-  font-family: Raleway, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   flex-grow: 1;
   text-align: center;

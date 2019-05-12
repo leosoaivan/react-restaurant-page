@@ -10,13 +10,11 @@ const Root = styled.div`
   background-image: url(${Shrooms});
 `;
 
-const App = () => {
-  return (
-    <Root>
-      <Header />
-      <NavBar />
-    </Root>
-  );
-}
+const App = () => (
+  <Root>
+    <Header />
+    <NavBar />
+  </Root>
+);
 
 export default App;

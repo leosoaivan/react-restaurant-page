@@ -1,7 +1,6 @@
 import React from 'react';
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { NavLink, HashRouter } from 'react-router-dom';
 import styled from 'styled-components';
-import Raleway from 'typeface-raleway';
 import Content from '../Content';
 
 const Root = styled.div`
@@ -35,36 +34,34 @@ const Link = styled(NavLink)`
   &:hover {
     background-color: rgba(255, 215, 0, 1);
   }
-;`
+;`;
 
-const NavBar = () => {
-  return (
-    <Root>
-      <HashRouter hashType="noslash">
-        <NavBarList>
-          <Link to="/">
-            HOME
-          </Link>
-          <Link to="/lunch">
-            LUNCH MENU
-          </Link>
-          <Link to="/">
-            DINNER MENU
-          </Link>
-          <Link to="/">
-            DESSERTS
-          </Link>
-          <Link to="/">
-            CONTACT US
-          </Link>
-          <Link to="/">
-            RESERVATIONS
-          </Link>
-        </NavBarList>
-        <Content />
-      </HashRouter>
-    </Root>
-  )
-}
+const NavBar = () => (
+  <Root>
+    <HashRouter hashType="noslash">
+      <NavBarList>
+        <Link to="/">
+          HOME
+        </Link>
+        <Link to="/lunch">
+          LUNCH MENU
+        </Link>
+        <Link to="/">
+          DINNER MENU
+        </Link>
+        <Link to="/">
+          DESSERTS
+        </Link>
+        <Link to="/">
+          CONTACT US
+        </Link>
+        <Link to="/">
+          RESERVATIONS
+        </Link>
+      </NavBarList>
+      <Content />
+    </HashRouter>
+  </Root>
+);
 
 export default NavBar;

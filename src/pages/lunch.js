@@ -57,14 +57,14 @@ const Lunch = () => {
           </MenuPrice>
         </ItemInformation>
       </MenuItem>
-    )
+    );
   });
 
   return (
     <Root>
       {menuDom}
     </Root>
-  )
-}
+  );
+};
 
 export default Lunch;

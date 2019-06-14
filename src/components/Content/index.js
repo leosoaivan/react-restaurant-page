@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Home from '../../pages/home';
 import Lunch from '../../pages/lunch';
+import Contact from '../../pages/contact';
 
 const Root = styled.div`
   box-sizing: border-box;
@@ -16,6 +17,7 @@ const Content = () => (
   <Root>
     <Route exact path="/" component={Home} />
     <Route path="/lunch/" component={Lunch} />
+    <Route path="/contact/" component={Contact} />
   </Root>
 );
 

@@ -52,11 +52,8 @@ const NavBar = () => (
         <Link to="/">
           DESSERTS
         </Link>
-        <Link to="/">
+        <Link to="/contact">
           CONTACT US
-        </Link>
-        <Link to="/">
-          RESERVATIONS
         </Link>
       </NavBarList>
       <Content />

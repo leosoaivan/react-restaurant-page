@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import LunchMenu from '../data/lunchmenu';
+import PageTitle from '../components/PageTitle';
 
 const Root = styled.div`
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  padding: 12px;
 `;
 
 const MenuItem = styled.div`
-  width: 47.5%;
+  width: 50%;
   margin-bottom: 24px;
 `;
 
@@ -27,13 +27,15 @@ const ItemInformation = styled.div`
   font-family: Josefin Slab, serif;
   font-size: 1.25em;
   font-weight: 400;
+  padding-right: 48px;
 `;
 
 const MenuDescription = styled.div`
-  width: 85%;
+  width: 90%;
 `;
 
 const MenuPrice = styled.div`
+  margin-right: 12px;
 `;
 
 const Lunch = () => {
@@ -60,6 +62,9 @@ const Lunch = () => {
 
   return (
     <Root>
+      <PageTitle>
+        Lunch
+      </PageTitle>
       {menuDom}
     </Root>
   );
